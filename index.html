@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Injection CTF Challenge</title>
+    <style>
+
+        body {
+            background: rgb(15, 15, 15);
+            align-items: center;
+            padding: 65px 55px;
+            background-color: #000000;
+            opacity: 0.8;
+            background-image: linear-gradient(0deg, #000000 50%, #0e0e0e 50%);
+            background-size: 10px 10px;
+            text-align: center;
+            font-family: "Space Mono", monospace;
+        }
+
+        h1, h2 {
+            color: lightgreen;
+            font-size: 5rem;
+        }
+
+        .hidden {
+            opacity: 0%;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .hidden:hover {
+            opacity: 100%;
+        }
+
+
+        .hacker-icon {
+            width: 120px;  
+            height: auto;
+            margin-bottom: 20px;
+            animation: glitch 1.5s infinite;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(2px, -2px); }
+        }
+
+      .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            background: lightgreen;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #0e8000;
+            color: white;
+        }
+
+        .clue-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0, 255, 0, 0.1);
+            border-left: 5px solid lightgreen;
+            font-style: italic;
+            color: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img class="hacker-icon" src="assets/hacker-icon.png" alt="Hacker Icon">
+        <h1>SQL Injection CTF Challenge</h1>
+        <h2 class="hidden">Can you break in?</h2>
+        <p class="hidden">Find the right input to bypass the system and retrieve the flag.</p>
+
+        <div class="clue-box">
+            <p>💡 <span class="hint">Hint:</span> A single **'** can change everything...</p>
+        </div>
+
+        <a class="button" href="challenge/sql-challenge.html">Start Hacking</a>
+    </div>
+
+</body>
+</html>
